@@ -1,11 +1,14 @@
 import './App.css';
-
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
   return (
-    <div className="flex items-center justify-center h-screen bg-white">
-    <h1 className='text-3xl font-bold text-center text-red-500'>hello Aniiket</h1>
-    </div>
-    );  
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<div>Hello World</div>} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
